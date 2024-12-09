@@ -10,6 +10,5 @@ terraform {
 }
 
 provider "aws" {
-  source = "hashicorp/aws"
   region = "us-west-2"
 }
