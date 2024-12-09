@@ -9,7 +9,7 @@ terraform {
   }
 }
 
-provider "aws-test-no-source" {
+provider "aws" {
   # provider configuration here
   region = "us-west-2"
 }
