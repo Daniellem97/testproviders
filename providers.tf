@@ -3,6 +3,6 @@ terraform {
     kubernetes = {
     }
     aws = {
-    region = "us-west-2"    }
+    }
   }
 }
