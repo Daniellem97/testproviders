@@ -1,14 +1,8 @@
 terraform {
   required_providers {
     kubernetes = {
-      source = "opentofu/kubernetes"
     }
     aws = {
-      source = "opentofu/aws"
-    }
+    region = "us-west-2"    }
   }
-}
-
-provider "aws" {
-  region = "us-west-2"
 }
