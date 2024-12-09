@@ -10,6 +10,6 @@ terraform {
 }
 
 provider "aws" {
-  # provider configuration here
+  source = "hashicorp/aws"
   region = "us-west-2"
 }
