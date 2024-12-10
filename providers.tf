@@ -4,12 +4,9 @@ terraform {
     aws = {}
     fastly = {
       source  = "fastly/fastly"
-      version = ">= 0.38.0"
     }
   }
 }
-
-version = ">= 0.38.0"
 
 # Configure the Fastly Provider
 provider "fastly" {
