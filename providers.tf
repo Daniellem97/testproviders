@@ -1,10 +1,19 @@
 terraform {
   required_providers {
-    kubernetes = {
-    }
-    aws = {
+    kubernetes = {}
+    aws = {}
+    fastly = {
+      source  = "fastly/fastly"
+      version = ">= 0.38.0"
     }
   }
+}
+
+version = ">= 0.38.0"
+
+# Configure the Fastly Provider
+provider "fastly" {
+  api_key = "test"
 }
 
 resource "fastly_service_v1" "demo" {
@@ -22,18 +31,4 @@ resource "fastly_service_v1" "demo" {
   }
 
   force_destroy = true
-}
-
-terraform {
-  required_providers {
-    fastly = {
-      source = "fastly/fastly"
-      version >= "0.38.0"
-    }
-  }
-}
-
-# Configure the Fastly Provider
-provider "fastly" {
-  api_key = "test"
 }
