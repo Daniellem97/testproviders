@@ -13,7 +13,7 @@ provider "fastly" {
   api_key = "test"
 }
 
-resource "fastly_service_v1" "demo" {
+resource "fastly_service_vcl" "demo" {
   name = "demofastly"
 
   domain {
